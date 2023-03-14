@@ -1,0 +1,80 @@
+:root {
+  --fs-lg: clamp(2.4rem, 4vw, 4rem);
+  --fs-400: clamp(1rem, 2vw, 1.5rem);
+}
+body {
+  width: 90%;
+  margin: 20px auto;
+}
+
+nav h3 {
+  font-family: "Inconsolata", monospace;
+  color: rgba(51, 51, 51, 1);
+  font-size: 23px;
+}
+main {
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+  justify-content: space-between;
+  margin: 170px auto;
+}
+.img {
+  width: 40%;
+}
+.img img {
+  width: 100%;
+}
+.text {
+  width: 50%;
+}
+.text h1 {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: var(--fs-lg);
+  color: rgba(51, 51, 51, 1);
+  margin-top: 10px;
+}
+.text p {
+  width: 60%;
+  color: rgba(79, 79, 79, 1);
+  font-size: var(--fs-400);
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+}
+button {
+  margin-top: 3rem;
+  background-color: #333333;
+  border: none;
+  padding: 25px 35px;
+  color: rgba(255, 255, 255, 1);
+}
+footer,
+footer a {
+  color: rgba(189, 189, 189, 1);
+  font-size: var(--fs-400);
+  text-align: center;
+}
+
+@media (max-width: 970px) {
+  .img img {
+    width: 360px;
+  }
+}
+
+@media (max-width: 750px) {
+  main {
+    flex-direction: column;
+    margin: 60px auto;
+  }
+  .img,
+  .text,
+  .text p {
+    width: 100%;
+  }
+
+  .img img {
+    width: 80%;
+    margin: 30px;
+  }
+}
